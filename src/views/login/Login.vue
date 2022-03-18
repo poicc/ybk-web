@@ -33,11 +33,16 @@
         <LoginPhone class="form" v-else></LoginPhone>
         <div class="auto-login">
           <div class="auto">
-            <input type="checkbox" value="isAgree"
-            id="isAgree"
-            v-model="isAgree" />
+            <input
+              type="checkbox"
+              value="isAgree"
+              id="isAgree"
+              v-model="isAgree"
+            />
             <label for="isAgree"></label
-            ><span :class="isAgree ? 'prim' : ''" style="margin-left:5px;">30天自动登录</span>
+            ><span :class="isAgree ? 'prim' : ''" style="margin-left: 5px"
+              >30天自动登录</span
+            >
           </div>
           <div class="col-1"></div>
           <div class="forget" @click="forget()">忘记密码?</div>
@@ -88,7 +93,13 @@ export default {
     },
     login() {
       axios.post(baseUrl["baseUrl"] + "/login", this.form).then((res) => {
-        console.log(res);
+        console.log(res.data.data);
+        if (res.data.code == 200) {
+          localStorage.setItem("avatar", res.data.data.avatar);
+          localStorage.setItem("nickname", res.data.data.nickname);
+          localStorage.setItem("id", res.data.data.id);
+          this.$router.push("about");
+        }
       });
     },
     forget() {
