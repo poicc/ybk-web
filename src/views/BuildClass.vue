@@ -1,4 +1,5 @@
 <template>
+  <navbar></navbar>
   <input type="text" /> 创建班课
   <div>
     <div class="form-group">
@@ -38,8 +39,12 @@
 </template>
 
 <script>
+import navbar from "@/components/nav.vue";
 export default {
   name: "BuildClass",
+  components: {
+    navbar,
+  },
 };
 </script>
 
