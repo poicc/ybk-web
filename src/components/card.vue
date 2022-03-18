@@ -1,11 +1,11 @@
 <template>
-  <ul class="container">
+  <ul class="wd-container">
     <li v-for="(item, index) in images" :key="index">
-      <img :src="item.course.coverUrl" alt="" class="bk" />
-      <img :src="item.creater.avatar" alt="" class="avator" />
-      <div class="box">
-        <span id="teacher">{{ item.creater.nickname }}</span>
-        <span id="classname">{{ item.course.title }}</span>
+      <img :src="item.course.coverUrl" alt="" class="wd-bk" />
+      <img :src="item.creater.avatar" alt="" class="wd-avator" />
+      <div class="wd-box">
+        <span id="wd-teacher">{{ item.creater.nickname }}</span>
+        <span id="wd-classname">{{ item.course.title }}</span>
         <p>{{ item.course.des }}</p>
         <a>进入 ></a>
       </div>
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.container {
+.wd-container {
   background-color: white;
   width: 980px;
   margin: auto;
@@ -64,11 +64,11 @@ export default {
     &:hover {
       cursor: pointer;
     }
-    .bk {
+    .wd-bk {
       width: 100%;
       height: 220px;
     }
-    .avator {
+    .wd-avator {
       height: 66px;
       width: 66px;
       position: absolute;
@@ -79,16 +79,16 @@ export default {
       padding: 3px 3px;
     }
 
-    .box {
+    .wd-box {
       height: 96px;
       width: 100%;
       position: relative;
-      #teacher {
+      #wd-teacher {
         position: absolute;
         left: 86px;
         top: 5px;
       }
-      #classname {
+      #wd-classname {
         color: #333;
         line-height: 18px;
         position: absolute;

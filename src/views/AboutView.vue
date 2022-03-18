@@ -12,7 +12,7 @@ export default {
   name: "HomeView",
   components: {
     bkcard,
-    tabbar,
+    tabbar
   },
 };
 </script>
