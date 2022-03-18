@@ -1,0 +1,120 @@
+.body {
+    background-color: #fff;
+
+    .login-tab {
+        height: 70px;
+        display: flex;
+        align-items: center;
+
+       
+        .logo {
+            float: left;
+            width: 160px;
+            height: 50px;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .login {
+        width: 100vw;
+        height: 80vh;
+        background-image: url('https://static-cdn-oss.mosoteach.cn/mosoteach2/common/images/login-bg.png');
+        // background-size: cover;
+        // background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .login-title {
+            width: 405px;
+            height: 147px;
+            top: 20%;
+            left: 15%;
+            position: absolute;
+            background-image: url('https://static-cdn-oss.mosoteach.cn/mosoteach2/common/images/login-bg-font.png');
+        }
+
+        .card-container {
+            position: absolute;
+            top: 12%;
+            right: 10%;
+            width: 350px;
+            height: 400px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .tab {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                .col-small {
+                    width: 3vw;
+                }
+                .change {
+                    border-bottom: 4px solid #0DC4DC;
+                    border-radius: 2px;
+                }
+                .hand {
+                    height: 30px;
+                    cursor: pointer;
+                }
+            }
+
+            .auto-login {
+                font-size: 15px;
+                color: gray;
+                display: flex;
+                .auto {
+                    float: left;
+                    input {
+                        color: #0DC4DC;
+                        margin-right: 5px;
+                    }
+                    
+                }
+                .forget {
+                    font-size: 15px;
+                    color: #0DC4DC;
+                }
+            }
+            .btn {
+                width: 100%;
+                button {
+                    width: 280px;
+                    height: 40px;
+                    color: #0DC4DC;
+                    background-color: #fff;
+                    border: 1px solid #0DC4DC;
+                }
+            }
+            .href {
+                color: #0DC4DC;
+                font-size: 15px;
+            }
+        }
+
+    }
+
+
+}
+
+.col-1 {
+    width: 7vw;
+}
+
+.col-2 {
+    width: 10vw;
+}
+
+.col-6 {
+    width: 50vw;
+}

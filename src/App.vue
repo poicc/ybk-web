@@ -1,8 +1,8 @@
 <template>
-  <nav>
-    <router-link to="/">我创建的</router-link> |
-    <router-link to="/about">我加入的</router-link>
-  </nav>
+  <!-- <nav> -->
+    <!-- <router-link to="/">我创建的</router-link> |
+    <router-link to="/about">我加入的</router-link> -->
+  <!-- </nav> -->
   <router-view/>
 </template>
 
